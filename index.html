@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>E-Commerce Management System</h1>
+
+<div class="container">
+    <input type="text" id="name" placeholder="Customer Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="phone" placeholder="Phone">
+    <input type="text" id="address" placeholder="Address">
+
+    <button onclick="addCustomer()">Insert</button>
+    <button onclick="updateCustomer()">Update</button>
+</div>
+
+<h2>Customer Records</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="customerTable"></tbody>
+</table>
+
+<h2>Stored Procedure Demo</h2>
+<button onclick="countCustomers()">
+    Count Customers
+</button>
+
+<p id="result"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
